@@ -9,7 +9,8 @@ export default function Home() {
 			},
 			body: JSON.stringify({ dir, on })
 		})
-			.then(console.log)
+			.then((res) => res.text())
+			.then((data) => console.log(data))
 			.catch(console.log);
 	};
 

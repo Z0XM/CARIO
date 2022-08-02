@@ -23,7 +23,7 @@ export default function handler(req, res) {
 
 		console.log(`${codes[dir]} ${on ? 'ON' : 'OFF'}`);
 
-		res.send('Success!');
+		res.send(`${codes[dir]} ${on ? 'ON' : 'OFF'}`);
 	} catch (error) {
 		console.log(error);
 		res.send('Error!');
