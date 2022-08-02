@@ -8,7 +8,9 @@ export default function Home() {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ dir, on })
-		});
+		})
+			.then(console.log)
+			.catch(console.log);
 	};
 
 	return (
