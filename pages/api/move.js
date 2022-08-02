@@ -1,6 +1,6 @@
 import mqtt from 'mqtt';
 
-const client = mqtt.connect('mqtt://broker.hivemq.com');
+const client = mqtt.connect('https://broker.emqx.io');
 
 export default function handler(req, res) {
 	try {
